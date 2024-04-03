@@ -8,7 +8,7 @@ import io
 app = Flask(__name__)
 
 # Load YOLOv5 model
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
+model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True, trust_repo=True)
 
 # Set confidence threshold
 conf_threshold = 0.2
